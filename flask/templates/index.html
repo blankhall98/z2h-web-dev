@@ -1,0 +1,55 @@
+{%extends 'base.html'%}
+
+{%block title%}INFO{%endblock%}
+
+{%block content%}
+
+<div class="container text-center">
+    <h3 class="text-secondary">
+        Home Section
+    </h3>
+</div>
+
+<div class="container py-2">
+    <h2>About me</h2>
+    <p>
+        This is information about me. <br>
+        I love to play guitar and code. <br>
+        My favorite book is animal farm
+    </p>
+</div>
+
+<div class="container py-2 px-4">
+    <h2>Contact me</h2>
+    <form>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Email address</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">What is your favorite language</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>Python</option>
+            <option>R</option>
+            <option>JavaScript</option>
+            <option>C++</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect2">What is your favorite topic</label>
+          <select multiple class="form-control" id="exampleFormControlSelect2">
+            <option>Data Science</option>
+            <option>Web Development</option>
+            <option>Web Scraping</option>
+            <option>Finance</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Write your message</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-warning my-2">Send Message</button>
+    </form>
+</div>
+
+{%endblock%}
